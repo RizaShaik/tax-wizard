@@ -1,18 +1,18 @@
-# 🧙‍♂️ Tax Wizard — Full-Stack AI Tax Assistant
+# Tax Wizard — Full-Stack AI Tax Assistant
 
 A modern, full-stack MERN (MongoDB, Express, React, Node.js) Indian tax assistant application. Upload your **Form 16**, get instant Old vs. New regime comparison, and receive personalized AI-powered tax insights securely.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi-step Onboarding** — Enter income, deductions, and optionally upload Form 16.
 - **Secure Authentication** — JWT-based authentication to securely save and access tax profiles.
 - **Form 16 PDF Parsing** — 4-stage intelligent extraction pipeline:
-  - 📄 **Text layer** — instant extraction for digital PDFs.
-  - ⚡ **OCR** — Tesseract.js for scanned/image-based PDFs.
-  - 🔍 **Smart heuristics** — keyword + size-based number classification.
-  - 🤖 **Gemini Vision** — Advanced fallback processing for non-standard formats.
+  - **Text layer** — instant extraction for digital PDFs.
+  - **OCR** — Tesseract.js for scanned/image-based PDFs.
+  - **Smart heuristics** — keyword + size-based number classification.
+  - **Gemini Vision** — Advanced fallback processing for non-standard formats.
 - **Tax Engine** — Deterministic Old Regime vs. New Regime (FY 2023-24) calculator with 87A rebate & surcharge.
 - **Premium Dark UI** — Glassmorphism-inspired fintech-grade design with Framer Motion animations.
 - **Interactive Dashboard** — Charts, regime comparison, missing deduction detectors, and savings breakdown.
@@ -20,7 +20,7 @@ A modern, full-stack MERN (MongoDB, Express, React, Node.js) Indian tax assistan
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 | Layer | Technology |
@@ -45,7 +45,7 @@ A modern, full-stack MERN (MongoDB, Express, React, Node.js) Indian tax assistan
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -56,7 +56,7 @@ A modern, full-stack MERN (MongoDB, Express, React, Node.js) Indian tax assistan
 ### Installation
 
 ```bash
-git clone https://github.com/RizaShaik/tax-wizard/tree/main
+git clone https://github.com/RizaShaik/tax-wizard
 cd tax-wizard
 npm install
 cd server && npm install
@@ -93,10 +93,10 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
-tax_wizard/
+tax_wiz/
 ├── server/              # Express Backend Node app
 │   ├── models/          # Mongoose schemas (User, TaxData)
 │   ├── routes/          # API endpoints (Auth, AI, Data)
@@ -125,7 +125,7 @@ tax_wizard/
 
 ---
 
-## 🧮 Tax Calculation
+## Tax Calculation
 
 Supports **FY 2023-24 / AY 2024-25** rules:
 
@@ -134,12 +134,12 @@ Supports **FY 2023-24 / AY 2024-25** rules:
 | Basic Exemption | ₹2.5L | ₹3L |
 | 87A Rebate | Up to ₹12,500 (if taxable ≤ ₹5L) | Up to ₹25,000 (if taxable ≤ ₹7L) |
 | Standard Deduction | ₹50,000 | ₹50,000 |
-| 80C / 80D / HRA | ✅ Applicable | ❌ Not applicable |
+| 80C / 80D / HRA | Applicable | Not applicable |
 | Health & Education Cess | 4% | 4% |
 
 ---
 
-## 📄 Form 16 Upload
+## Form 16 Upload
 
 Tax Wizard accepts:
 - **Digital PDFs** (text-layer) — fastest, most accurate
@@ -152,6 +152,6 @@ Extracted fields: Gross Salary, TDS Deducted, Section 80C, Section 80D, HRA Exem
 
 ---
 
-## 📝 License
+## License
 
 MIT — free to use for demos, hackathons, and learning.
